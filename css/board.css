@@ -1,0 +1,117 @@
+body {
+	font-size: 12px;
+	font-family: "Verdana", "sans-serif", "Arial";
+}
+
+body table{
+	font-size: 14px;
+}
+
+tbody {
+	text-align: left;
+}
+
+.form_table td {
+	border-top: dotted 1px #747474;
+	border-left: dotted 1px #747474;
+	text-align: center;
+}
+
+.td_title {
+	color: #000000;
+	border-top: solid 1px #95B8E7 !important;
+	border-left: solid 1px #95B8E7 !important;
+	background-color: #EFF5FF;
+	text-align: center;
+	padding: 5px 2px;
+}
+
+.td_sum {
+	color: #000000;
+	border-top: solid 1px #95B8E7 !important;
+	border-left: solid 1px #95B8E7 !important;
+	background-color: #cddded;
+	text-align: center;
+	font-weight: bold;
+	padding: 5px 2px;
+}
+
+.td_input {
+	text-align: right;
+}
+
+.border {
+	border: solid 1px #95B8E7 !important;
+	height: 30px;
+}
+
+.border_bottom {
+	border-bottom: solid 1px #95B8E7 !important;
+}
+
+.border_right {
+	border-right: solid 1px #95B8E7 !important;
+}
+
+.border_double {
+	border-top: double 3px #95B8E7 !important;
+}
+.border_bottom_double {
+	border-bottom: double 3px #95B8E7 !important;
+}
+
+.table_title {
+	font-size: 15px;
+	text-align: left;
+	border-top: 0px;
+	border-left: 0px;
+	font-weight: bold;
+}
+
+.table_title > div {
+	margin-top: 30px;
+}
+
+.num_input {
+	letter-spacing: -0.5px;
+	border: 0px solid #CCC;
+	height: 21px;
+	line-height: 20px;
+	width: 98%;
+	text-align: right;
+	display: table-cell;
+	font-size: 12px;
+}
+
+.num_div {
+	letter-spacing: -0.5px;
+	height: 21px;
+	text-align: right;
+	padding: 3px 2px 0 0;
+}
+
+input[type="text"]:disabled {
+	height: 21px;
+	width: 98%;
+	text-align: right;
+	display: table-cell;
+	font-size: 12px;
+	background-color: #FFFFFF;
+}
+
+.td_cal {
+	padding: 0px 2px;
+	color: #000000;
+	background-color: #F4F4F4;
+	height: 22px;
+	text-align: right;
+}
+
+.cal {
+	/*letter-spacing: -1px;*/
+	text-align: right;
+	font-weight: 600;
+}
+
+
+

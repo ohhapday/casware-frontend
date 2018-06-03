@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        .box-view table tr > th > div, .box-view table tr > td > div,
+        .box-write table tr > th > div, .box-write table tr > td > div {
+            text-align: center;
+        }
+
+        .box-view table tr.info > th, .box-write table tr.info > th {
+            vertical-align: middle;
+            background-color: #0a73a7;
+            /* background-color: #a75a67; */
+            color: #FFFFFF;
+        }
+
+        .box-view table tr.info > td, .box-write table tr.info > td {
+            background-color: #FFFFFF;
+        }
+
+        .box-view table tr.odd > td, .box-write table tr.odd > td {
+            background-color: #eeeeee;
+        }
+
+    </style>
+</head>
+<body>
+
+<!-- 보기 화면 -->
+<div class="box-view">
+    <div class="row">
+        <div class="col-sm-4">
+            <button type="button" class="btn bg-purple btn-block margin-bottom">
+                <i class="fa fa-edit"></i>
+                작성 화면
+            </button>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="box box-info">
+                <div class="box-header">
+                    <h3 class="box-title"></h3>
+                    <div class="box-tools">
+                        <div class="col-sm-4 pull-right">
+                            <div class="input-group">
+                                <div class="input-group-btn">
+                                    <button type="button" class="btn btn-default"
+                                            style="width: 100px;">
+                                        주간 선택
+                                    </button>
+                                </div>
+                                <input type="text" name="pray_date" class="form-control input"
+                                       title="" style="cursor: pointer;">
+                                <span class="fa fa-calendar form-control-feedback"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box-body">
+                    <div class="form-group table-responsive" style="max-height: 300px; overflow-y: auto;">
+                        <table class="table table-bordered table-condensed table-thanks">
+                            <colgroup>
+                                <col style="text-align: center; width: 30%;">
+                                <col style="text-align: center; width: 70%;">
+                            </colgroup>
+                            <thead>
+                            <tr class="info text-center">
+                                <th>
+                                    <div>조직</div>
+                                </th>
+                                <th>
+                                    <div>주간 감사 기도 내용</div>
+                                </th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr class="hidden">
+                                <td>
+                                    <div></div>
+                                </td>
+                                <td>
+                                    <div class="pull-left"></div>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="form-group table-responsive" style="max-height: 300px; overflow-y: auto;">
+                        <table class="table table-bordered table-condensed table-vow">
+                            <colgroup>
+                                <col style="text-align: center; width: 30%;">
+                                <col style="text-align: center; width: 70%;">
+                            </colgroup>
+                            <thead>
+                            <tr class="info text-center">
+                                <th>
+                                    <div>조직</div>
+                                </th>
+                                <th>
+                                    <div>주간 서원 기도 내용</div>
+                                </th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr class="hidden">
+                                <td>
+                                    <div></div>
+                                </td>
+                                <td>
+                                    <div class="pull-left"></div>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<!-- ./보기 화면 -->
+
+
+<!-- 쓰기 화면 -->
+<div class="box-write hidden">
+    <div class="row">
+        <div class="col-sm-4">
+            <button type="button" class="btn bg-purple btn-block margin-bottom">
+                <i class="fa fa-edit"></i>
+                보기 화면
+            </button>
+        </div>
+    </div>
+
+    <form method="post">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="box box-info">
+                    <div class="box-header">
+                        <h3 class="box-title"></h3>
+                        <div class="box-tools">
+                            <div class="col-sm-5 pull-left">
+                                <div class="input-group">
+                                    <div class="input-group-btn">
+                                        <button type="button" class="btn btn-default"
+                                                style="width: 100px;">
+                                            본부 선택
+                                        </button>
+                                    </div>
+                                    <select name="dept_code"
+                                            class="form-control input-sm select2"
+                                            title="" style="width: 100%;">
+                                        <option value=""></option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4 pull-right">
+                                <div class="input-group">
+                                    <div class="input-group-btn">
+                                        <button type="button" class="btn btn-default"
+                                                style="width: 100px;">
+                                            주간 선택
+                                        </button>
+                                    </div>
+                                    <input type="text" name="pray_date" class="form-control input"
+                                           title="" style="cursor: pointer;">
+                                    <span class="fa fa-calendar form-control-feedback"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box-body">
+                        <div class="form-group table-responsive">
+                            <table class="table table-bordered table-condensed table-thanks-w">
+                                <colgroup>
+                                    <col style="text-align: center; width: 30%;">
+                                    <col style="text-align: center; width: 70%;">
+                                </colgroup>
+                                <tr class="info text-center">
+                                    <th rowspan="2">
+                                        <div>주간 감사 기도</div>
+                                    </th>
+                                    <td>
+                                        <div>
+                                            <input type="text" name="lang_kor" title="" class="form-control input-sm"
+                                                   placeholder="Korean">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="info text-center">
+                                    <td>
+                                        <div>
+                                            <input type="text" name="lang_eng" title="" class="form-control input-sm"
+                                                   placeholder="English">
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table class="table table-bordered table-condensed table-vow-w">
+                                <colgroup>
+                                    <col style="text-align: center; width: 30%;">
+                                    <col style="text-align: center; width: 70%;">
+                                </colgroup>
+                                <tr class="info text-center">
+                                    <th rowspan="2">
+                                        <div>주간 서원 기도</div>
+                                    </th>
+                                    <td>
+                                        <div>
+                                            <input type="text" name="lang_kor" title="" class="form-control input-sm"
+                                                   placeholder="Korean">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="info text-center">
+                                    <td>
+                                        <div>
+                                            <input type="text" name="lang_eng" title="" class="form-control input-sm"
+                                                   placeholder="English">
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div class="row hidden-print" style="margin-bottom: 2.2rem; margin-top: -2.2rem;">
+                            <div class="col-sm-12">
+                                <div class="btn-group pull-right" role="group">
+                                    <button type="submit" class="btn bg-purple"><i class="fa fa-save"></i> 저장
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group table-responsive" style="max-height: 200px; overflow-y: auto;">
+                            <table class="table table-bordered table-condensed table-thanks">
+                                <colgroup>
+                                    <col style="text-align: center; width: 30%;">
+                                    <col style="text-align: center; width: 70%;">
+                                </colgroup>
+                                <thead>
+                                <tr class="info text-center">
+                                    <th>
+                                        <div>일자</div>
+                                    </th>
+                                    <th>
+                                        <div>주간 감사 기도 내용</div>
+                                    </th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr class="hidden">
+                                    <td>
+                                        <div></div>
+                                    </td>
+                                    <td>
+                                        <div class="pull-left"></div>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="form-group table-responsive" style="max-height: 200px; overflow-y: auto;">
+                            <table class="table table-bordered table-condensed table-vow">
+                                <colgroup>
+                                    <col style="text-align: center; width: 30%;">
+                                    <col style="text-align: center; width: 70%;">
+                                </colgroup>
+                                <thead>
+                                <tr class="info text-center">
+                                    <th>
+                                        <div>일자</div>
+                                    </th>
+                                    <th>
+                                        <div>주간 서원 기도 내용</div>
+                                    </th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr class="hidden">
+                                    <td>
+                                        <div></div>
+                                    </td>
+                                    <td>
+                                        <div class="pull-left"></div>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+<!-- ./쓰기 화면 -->
+
+</body>
+</html>

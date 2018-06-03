@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <title>GlobalCAS</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/bower_components/AdminLTE/dist/css/AdminLTE.css">
+    <link rel="stylesheet" href="/bower_components/AdminLTE/dist/css/skins/_all-skins.min.css">
+    <link rel="stylesheet" href="/bower_components/iCheck/skins/all.css">
+    <link rel="stylesheet" href="/bower_components/jQuery_loading/jquery.faloading.css">
+    <link rel="stylesheet" href="/bower_components/select2/dist/css/select2.css"/>
+    <link rel="stylesheet"
+          href="/bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css"/>
+
+    <link rel="shortcut icon" href="/images/cas.ico" type="image/x-icon"/>
+
+</head>
+<body>
+
+<!-- 결재란 -->
+<div class="app_title">
+    시 말 서
+</div>
+<table class="my-table">
+    <colgroup>
+        <col style="width: 15%;">
+        <col style="width: 20%;">
+        <col style="width: 65%;">
+    </colgroup>
+    <tbody>
+    <tr>
+        <td class="title">분류번호</td>
+        <td><div class="분류번호"></div></td>
+        <td rowspan="5" style="padding: 3px;">
+            <table class="my-table" id="draft-line-table" style="border: 1px solid #000000;">
+                <tr>
+                    <td style="width: 4%;" rowspan="4">결<br><br><br>재</td>
+                    <td style="width: 10%; height: 25px;">담당</td>
+                    <td width="10%">팀장</td>
+                    <td width="10%">부서장</td>
+                    <td width="10%">본부장</td>
+                    <td width="10%">부문장</td>
+                    <td width="10%">CEO</td>
+                </tr>
+                <tr>
+                    <td style="height: 25px"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td style="height: 85px"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td style="height: 25px"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <tr>
+        <td class="title">보전년한</td>
+        <td>내규 준용</td>
+    </tr>
+    <tr>
+        <td class="title">작성자</td>
+        <td>
+            <div class="기안자"></div>
+        </td>
+    </tr>
+    <tr>
+        <td class="title">부 서</td>
+        <td>
+            <div class="기안부서"></div>
+        </td>
+    </tr>
+    <tr>
+        <td class="title">작성일자</td>
+        <td>
+            <div class="기안일자"></div>
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+<!-- 기안문 -->
+<table class="my-table" style="margin-top: 5px;">
+    <colgroup>
+        <col style="width: 15%;">
+        <col style="width: 35%">
+    </colgroup>
+    <tbody>
+    <tr>
+        <td class="title">제 목</td>
+        <td colspan="3">
+            <div class="제목" style="text-align: left;"></div>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="4" class="title">상기의 건에 대하여 아래와 같이 시말서를 제출합니다.</td>
+    </tr>
+    <tr>
+        <td colspan="4" style="padding: 15px;">
+            <div style="position: relative; min-height: 450px;">
+                <div class="내용" style="text-align: left; min-height: 300px;"></div>
+            </div>
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+<table style="width: 100%;">
+    <tr>
+        <td style="width: 32%; height: 19px;">A704-14</td>
+        <td style="width: 35%; text-align: center;">주식회사 카스</td>
+        <td style="width: 32%; text-align: right;">Ver.1 (2017. 04. 01)</td>
+    </tr>
+</table>
+
+</body>
+</html>

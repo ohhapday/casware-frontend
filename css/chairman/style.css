@@ -1,0 +1,119 @@
+body {
+    font-family: NanumBarunGothic, '나눔바른고딕', 'Nanum Barun Gothic', 'Malgun Gothic', '맑은고딕', 'Apple SD Gothic Neo', Dotum, '돋움', sans-serif;
+}
+
+body::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 14px;
+    height: 14px;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    border: 3px solid #fff;
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: auto;
+}
+
+.table-container::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 14px;
+    height: 14px;
+}
+
+.table-container::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    border: 3px solid #fff;
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.table-container thead>tr>th {
+    padding: 0;
+    border: 0;
+}
+
+.ellipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+}
+
+.div-hit {
+    float: right; color: #9f9f9f; margin-right: 20px; margin-top: 10px;
+    text-align: right;
+}
+
+/**
+하단 사용자 변경
+ */
+
+#bbs_lists_table {
+    border: 0px solid #0073b7;
+    border-collapse: collapse !important;
+}
+
+#bbs_lists_table > thead > tr > th {
+    background-color: #0073b7;
+    color: #ffffff;
+    border-bottom-width: 0;
+    padding: 5px;
+}
+
+#bbs_lists_table > tbody > tr > td {
+    border: 1px solid #d6d6d6;
+    border-collapse: collapse !important;
+}
+
+#bbs_vote button {
+    font-size: 3rem;
+    border-radius: rem;
+}
+
+.box-header div:first-child {
+    cursor: auto;
+}
+
+#bbs_lists_table thead {
+    display: none;
+}
+
+#bbs_lists_table tbody td {
+    padding: 5px 20px;
+}
+
+#bbs_lists_table .box-line {
+    border-bottom: 0;
+}
+
+#bbs_lists_table .info-box {
+    background-color: #E8F2FC;
+    color: #525252;
+}
+
+#bbs_lists_table .info-box-content {
+    padding: 5px 10px;
+    margin-left: 10px;
+}
+
+#bbs_lists_table .info-box-text {
+    white-space: normal;
+    text-overflow: clip;
+}
+
+#bbs_lists_table .info-box-number {
+    text-align: right;
+}
+
+#bbs_lists_table .badge {
+    font-size: 1em;
+    padding: 10px;
+    border-radius: 3px;
+    margin-right: 2em;
+}
+

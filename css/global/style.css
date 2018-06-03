@@ -1,0 +1,257 @@
+﻿body {
+    font-family: NanumBarunGothic,'나눔바른고딕','Nanum Barun Gothic','Malgun Gothic','맑은고딕','Apple SD Gothic Neo',Dotum,'돋움',sans-serif;
+}
+
+body::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 14px;
+    height: 14px;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    border: 3px solid #fff;
+    background-color: rgba(0, 0, 0, .3);
+}
+
+@media (max-width: 768px) {
+    .control-sidebar {
+        padding-top: 140px;
+    }
+}
+
+@media (min-width: 768px) {
+    .control-sidebar {
+        padding-top: 70px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 100%;
+    }
+
+    .control-sidebar {
+        padding-top: 70px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container {
+        width: 1340px;
+    }
+
+    .control-sidebar {
+        padding-top: 70px;
+    }
+}
+
+.content-wrapper {
+    background-color: #ffffff;
+    min-height: 1000px;
+    margin-left: 0;
+    padding-top: 20px;
+}
+
+/**
+헤더/푸터 및 네비게이션 부분
+ */
+
+.main-header .logo, .main-header .logo-lg {
+    height: 70px;
+    line-height: 70px;
+    font-size: 1.5em;
+}
+
+.skin-blue .main-header .logo {
+    background-color: #4664B3;
+    color: #fff;
+    border-bottom: 0 solid transparent;
+}
+
+.skin-blue .main-header .logo:hover {
+    background-color: #2d4072;
+}
+
+.main-header .navbar .nav > li > a > .label {
+    font-size: 1.5em;
+}
+
+.main-footer {
+    margin-left: 0;
+}
+
+.skin-blue .wrapper, .skin-blue .main-sidebar, .skin-blue .left-side {
+    background-color: #3c579a;
+}
+
+.control-sidebar-dark, .control-sidebar-dark + .control-sidebar-bg {
+    background-color: #3c579a;
+}
+
+.skin-blue .main-header .navbar {
+    background-color: #3c579a;
+}
+
+/**
+    우측 슬라이드
+ */
+.control-sidebar {
+    right: -330px;
+    width: 330px;
+}
+
+.control-sidebar .tab-content {
+    min-height: 500px;
+    max-height: 500px;
+}
+
+.control-sidebar .control-sidebar-menu {
+    height: 400px;
+    overflow-y: auto;
+}
+
+.control-sidebar-menu::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 14px;
+    height: 14px;
+}
+
+.control-sidebar-menu::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    border: 3px solid #fff;
+    background-color: rgba(0, 0, 0, .3);
+}
+
+/**
+ 박스
+ */
+.box .box-header, .box .box-header i {
+    color: #FFFFFF;
+}
+
+.box .box-footer {
+    border-top: 1px solid #ebebeb;
+}
+
+.box.box-gray {
+    border: 1px solid #ebebeb;
+    border-top: 3px solid #959595;
+}
+
+.box.box-gray .box-header {
+    background-color: #959595;
+}
+
+.box.box-purple2 {
+    border: 1px solid #ebebeb;
+    border-top: 3px solid #3c579a;
+}
+
+.box.box-purple2 .box-header {
+    background-color: #3c579a;
+}
+
+.bg-purple {
+    background-color: #3c579a!important;
+}
+
+.box.box-green2 {
+    border: 1px solid #ebebeb;
+    border-top: 3px solid #008d4c;
+}
+
+.box.box-green2 .box-header {
+    background-color: #008d4c;
+}
+
+.user-panel img {
+    float: left;
+}
+
+.user-panel .user-info {
+    margin-left: 80px;
+}
+
+.user-info h3 {
+    font-family: NanumBarunGothic,'나눔바른고딕','Nanum Barun Gothic','Malgun Gothic','맑은고딕','Apple SD Gothic Neo',Dotum,'돋움',sans-serif;
+    margin-top: 0;
+    font-size: 30px;
+}
+
+.user-info-co {
+    color: #9f9f9f;
+}
+
+.box-line {
+    border-bottom: solid 1px #ebebeb;
+}
+
+.box-line:last-child {
+    border-bottom: 0px;
+}
+
+.box-line a {
+    color: inherit;
+}
+
+.box-line h5 {
+    min-height: 18px;
+}
+
+.ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+}
+
+.box-line p {
+    padding-left: 10px;
+    font-size: 12px;
+    color: #9f9f9f;
+}
+
+.text-light-blue {
+    color: #000096 !important;
+    font-weight: 600;
+}
+
+.read-title {
+    color: #919191 !important;
+    font-weight: 300;
+}
+/**
+ table
+ */
+#bbs_lists_table {
+    border: 2px solid #5a83e8!important;
+    border-collapse: collapse !important;
+}
+
+#bbs_lists_table > thead > tr > th {
+    background-color: #5a83e8;
+    color: #ffffff;
+    border-bottom-width: 0;
+}
+
+/**
+    글로벌 월간 리포트
+ */
+.minusCell {
+    color: #e85e60;
+}
+
+/**
+    구글 번역기
+ */
+#google_translate_element {
+    margin-bottom: 20px;
+}
+
+/**
+    추천
+ */
+#bbs_vote button {
+    font-size: 2rem!important;
+}

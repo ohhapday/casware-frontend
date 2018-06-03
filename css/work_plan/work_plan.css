@@ -1,0 +1,59 @@
+.modal input {
+    color: #000;
+}
+
+.fc-title {
+    font-size: 14px;
+    white-space: normal;
+    font-weight: 900;
+}
+
+.fc-day-grid-event {
+    min-height: 36px;
+}
+
+.fc-content-skeleton {
+    min-height: 150px;
+}
+
+@media print {
+    @page {
+        size: landscope;
+        margin: 0mm;
+    }
+
+    /** 주간일정에 대한 프린트 정의 */
+    .fc-agendaWeek-view .fc-title {
+        font-size: 1.0em !important;
+        font-weight: bold;
+    }
+
+    .fc-agendaWeek-view {
+        min-height: 650px;
+        border: 1px solid #000000;
+    }
+
+    /** 월간일정에 대한 프린트 정의 */
+    .fc-month-view .fc-title, .fc-month-view .fc-time {
+        font-size: 0.8em !important;
+        font-weight: 100;
+        white-space: nowrap;
+    }
+
+    .fc-toolbar {
+        margin-bottom: 0px !important;
+        padding: 0px;
+    }
+
+    .fc-day-grid-event {
+        min-height: 10px;
+    }
+
+    .fc-content-skeleton {
+        min-height: 10px;
+    }
+
+    .box-body {
+        min-height: 450px;
+    }
+}

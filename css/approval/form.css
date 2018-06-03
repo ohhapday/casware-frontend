@@ -1,0 +1,99 @@
+.my-table {
+    border: 2px solid #000000;
+    border-collapse: collapse;
+    padding: 3px;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.my-table td:not(.day) {
+    border: 1px solid #000000;
+    text-align: center;
+    padding: 3px;
+}
+
+.my-table input[type="text"], .my-table select {
+    width: 100%;
+    height: 100%;
+    padding: 3px;
+    height: 30px;
+}
+
+.my-table .title {
+    background-color: #767676;
+    color: #FFFFFF;
+    text-align: center;
+    border: 1px solid #000000;
+    height: 30px;
+}
+
+.my-table td {
+    height: 30px;
+}
+
+.my-table .form-control {
+    padding: 3px 12px;
+}
+
+.ellipsis {
+    width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.app_title {
+    border: 2px solid #7c7c7c;
+    margin: 10px auto;
+    width: 300px;
+    text-align: center;
+    font-size: 2em;
+    padding: 5px 10px;
+}
+
+/* 결재서류 상단 버튼 부분 */
+#app-head {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1000;
+    width: 100%;
+    min-height: 30px;
+    padding-bottom: 0px;
+}
+
+#app-head .box-primary {
+    margin-bottom: 0px;
+}
+
+/* //결재서류 상단 버튼 부분 */
+
+/* 결재서류 컨텐츠 부분 */
+#app-body {
+    padding-top: 75px;
+}
+
+/* //결재서류 컨텐츠 부분 */
+
+.content .row .col-sm-12 {
+    width: 780px;
+}
+
+/*------------print -------- */
+@media print {
+    @page {
+        margin: 5mm;
+        margin-top: 20mm;
+    }
+
+    .box {
+        border-top: 0px solid #FFFFFF !important;
+    }
+
+    #app-body {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+}
+
+/*end---------print -------- */

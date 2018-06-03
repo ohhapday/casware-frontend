@@ -1,0 +1,81 @@
+body::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 14px;
+    height: 14px;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    border: 3px solid #fff;
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.box-header {
+    border-bottom: 1px solid #f4f4f4;
+    font-size: 16px;
+}
+
+.tran_icon {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACIklEQVR4AYWRA7MdMRxHd1B+pw5q27Zt27Zt27Z5rbXq7mvuDqpf/0memZlzuedESte1we7O6xk6rWPowFnL0J5ot4ah2wqzgVLT4GLn9SE6ER0560IKhRQJ0W7p5wM1BjpSoFKZaLvq++9582K1qw3wZUu5fIBYE2LjaT2VSmUv6bp+wbbt84Zhn1dVg96Nc4lErrtCexbisN0hXqYDaE6AJ/FA/NaWAmN3f0YkmoTjuPB9H57nCVzXBQWh0IGJGV+RvOA0EzP33irlNqv5KvK4/ySCVDrLpYqBtmukZPo/xPumawwpM0BMC0SgNbH9fA6RSByD563kYjGWZVFgNb8yuYKFZ5iYefFZhnuRAiG3XhWi1+oMlm8/hNW7j2LF7iOYtm4nNh89KwNtVktp8K4QL1IBDD+gWAEG7MgLuRXBJ9l25Coev3iDg2cv4+q9R3Qmjgy0XsWKl1oEicVyy5V5tCDWHY1g1tqdWLx1P7LZLOhWZKDVSlYsFItlZGJFHiO2WZi8fCsWbzsAuleoqgpN06C0pECrclKRWCQ3J1quCHDz3ktcuHkPy3YeRCaTRS6Xg9J04dctzZf/RBHNJGi6TL6TTO+SQzdySCZTePD0BdLptAxUN+bNe12/UZer4LQbcAP3Hryn5aeFTOdQc4CPIRNuGK17X8fla68Rjcb5CooDRM2BucuvDzlx9inevHmHSCSKRCJBkaQ4yKcv3u74D/S7fQ0Eke71AAAAAElFTkSuQmCC);
+    padding: 9px 7px;
+}
+
+.with-border {
+    border-bottom: 1px solid #f4f4f4;
+}
+
+.ellipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+}
+
+ .breadcrumb {
+     font-size: 15px !important;
+     color: #0a73a7;
+ }
+
+.small-padding {
+    padding: 0 5px !important;
+}
+
+.middle-padding {
+    padding: 0 10px !important;
+}
+
+span.select2 .select2-selection--single {
+    border: 1px solid #d2d6de;
+    font-size: 12px;
+}
+
+span.select2 .select2-selection__rendered {
+    line-height: 20px !important;
+}
+
+[class^='select2'] {
+    border-radius: 0 !important;
+}
+
+select option {
+    width: 100%;
+    font-size: 16px;
+}
+
+.form-div {
+    height: 30px;
+    padding: 5px 10px;
+    margin: 0 3px;
+    /*
+    background-color: #3c8dbc;
+    color: #FFFFFF;
+    */
+    background-color: #435faa;
+    color: #FFFFFF;
+    border-radius: 2px;
+}
+
+.form-textarea {
+    padding: 5px 10px;
+    border: 1px solid #2d4072;
+}

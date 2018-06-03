@@ -1,0 +1,55 @@
+body {
+	font-size: 14px;
+}
+
+tbody {
+	text-align: left;
+}
+
+.td_black {
+	background: url(/standard/images/x_slash2.png);
+	background-size: 98% 98%;
+	background-color: #EAEAEA;
+}
+
+.form_table {
+	width: 100%; border-collapse: collapse; table-layout: auto;
+}
+
+.form_table td {
+	text-align: center;
+}
+
+.td_title {
+	color: #000000;
+	border: solid 1px #95B8E7 !important;
+	background-color: #EFF5FF;
+	text-align: center;
+	font-weight: bold;
+	vertical-align: middle !important;
+}
+
+.border {
+	border: solid 1px #95B8E7 !important;
+	height: 30px;
+}
+
+ .modal input {
+	 color: #000;
+ }
+
+.fc-title {
+	font-size: 14px;
+	white-space: normal;
+	font-weight: 900;
+}
+
+.fc-day-grid-event {
+	min-height: 36px;
+}
+
+.fc-content-skeleton {
+	min-height: 150px;
+}
+
+

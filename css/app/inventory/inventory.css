@@ -1,0 +1,68 @@
+body {
+    font-family: "맑은 고딕", "Tahoma", "sans-serif", "Arial";
+    font-size: 1.2em;
+}
+
+.content-wrapper {
+    margin-left: 0px;
+}
+
+.td_black {
+    background: url(/standard/images/x_slash2.png);
+    background-size: 98% 98%;
+    background-color: #EAEAEA;
+}
+
+.form_table {
+    table-layout: auto;
+    border-bottom: solid 1px #95B8E7;
+    border-right: solid 1px #95B8E7;
+    border-collapse: collapse;
+    width: 100%;
+    word-break:break-all;
+}
+
+.form_table th, .td_total {
+    color: #000000;
+    border-top: solid 1px #95B8E7;
+    border-left: solid 1px #95B8E7;
+    background-color: #EFF5FF;
+    text-align: center;
+    font-weight: bold;
+    padding: 5px 0px;
+}
+
+.form_table td div, .form_table th div, .form_table .td_total div {
+    text-align: right;
+    padding-right: 3px;
+}
+
+.form_table td {
+    border: solid 1px #95B8E7;
+    padding: 5px 0px;
+}
+
+.td_total {
+    background-color: #cddded;
+}
+
+.td_input {
+    text-align: right;
+}
+
+.border_double {
+    border-top: double 3px #95B8E7;
+}
+
+.border_bottom_double {
+    border-bottom: double 3px #95B8E7;
+}
+
+.ellipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+}
+
+

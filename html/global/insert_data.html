@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+
+	<link rel="stylesheet" href="/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css">
+	<link rel="stylesheet"
+		  href="/bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css"/>
+
+	<script src="/dist/js/require-config.js"></script>
+	<script src="/bower_components/requirejs/require.js" data-main="/dist/js/app/global/insert_data.js"></script>
+
+</head>
+<body>
+<form class="form-horizontal">
+	<div class="modal alert fade" id="inwork">
+		<div class="modal-dialog">
+			<div class="modal-content" style="border-radius: 4px; margin: 0 auto">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+							aria-hidden="true">&times;</span></button>
+					<h4 class="modal-title" style="font-weight: normal;">2월 Monthly Report 입력</h4>
+				</div>
+				<div class="modal-body">
+					<div class="col-sm-12 table-responsive" style="float: none">
+						<div class="form-group">
+							<label class="col-sm-12 control-label" style="font-size: 1.5em; text-align: left;">1. 현지실적</label>
+						</div>
+						<div class="form-group">
+							<label class="col-sm-2 control-label">매출 목표</label>
+							<div class="col-sm-4">
+								<input type="number" class="form-control" name="sales_goal" value="" autofocus>
+							</div>
+							<label class="col-sm-2 control-label">실적</label>
+							<div class="col-sm-4">
+								<input type="number" class="form-control" name="sales_result" value="">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-sm-2 control-label">수금 목표</label>
+							<div class="col-sm-4">
+								<input type="number" class="form-control" name="collect_goal" value="">
+							</div>
+							<label class="col-sm-2 control-label">실적</label>
+							<div class="col-sm-4">
+								<input type="number" class="form-control" name="collect_result" value="">
+							</div>
+						</div>
+						<div class="form-group" style="border-bottom: solid 1px #f4f4f4;"></div>
+						<div class="form-group">
+							<label class="col-sm-12 control-label" style="font-size: 1.5em; text-align: left;">2. 손익현황</label>
+						</div>
+						<div class="form-group">
+							<label class="col-sm-2 control-label">매출 원가</label>
+							<div class="col-sm-10">
+								<input type="number" class="form-control" name="cogs" value="">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-sm-2 control-label">인건비</label>
+							<div class="col-sm-4">
+								<input type="number" class="form-control" name="labor_cost" value="">
+							</div>
+							<label class="col-sm-2 control-label">기타비용</label>
+							<div class="col-sm-4">
+								<input type="number" class="form-control" name="etc" value="">
+							</div>
+						</div>
+						<div class="form-group" style="border-bottom: solid 1px #f4f4f4;"></div>
+						<div class="form-group">
+							<label class="col-sm-12 control-label" style="font-size: 1.5em; text-align: left;">3. 재고현황</label>
+						</div>
+						<div class="form-group">
+							<label class="col-sm-2 control-label">3개월미만</label>
+							<div class="col-sm-4">
+								<input type="number" class="form-control" name="inven_3_under" value="">
+							</div>
+							<label class="col-sm-2 control-label">3개월이상</label>
+							<div class="col-sm-4">
+								<input type="number" class="form-control" name="inven_3_over" value="">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-sm-2 control-label">6개월이상</label>
+							<div class="col-sm-4">
+								<input type="number" class="form-control" name="inven_6_over" value="">
+							</div>
+							<label class="col-sm-2 control-label">1년이상</label>
+							<div class="col-sm-4">
+								<input type="number" class="form-control" name="inven_y_over" value="">
+							</div>
+						</div>
+						<div class="form-group" style="border-bottom: solid 1px #f4f4f4;"></div>
+						<div class="form-group">
+							<label class="col-sm-12 control-label" style="font-size: 1.5em; text-align: left;">4. 채권현황</label>
+						</div>
+						<div class="form-group">
+							<label class="col-sm-2 control-label">3개월미만</label>
+							<div class="col-sm-4">
+								<input type="number" class="form-control" name="acc_3_under" value="">
+							</div>
+							<label class="col-sm-2 control-label">3개월이상</label>
+							<div class="col-sm-4">
+								<input type="number" class="form-control" name="acc_3_over" value="">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-sm-2 control-label">6개월이상</label>
+							<div class="col-sm-4">
+								<input type="number" class="form-control" name="acc_6_over" value="">
+							</div>
+							<label class="col-sm-2 control-label">1년이상</label>
+							<div class="col-sm-4">
+								<input type="number" class="form-control" name="acc_y_over" value="">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-sm-2 control-label">정상채권</label>
+							<div class="col-sm-4">
+								<input type="number" class="form-control" name="acc_normal" value="">
+							</div>
+						</div>
+						<div class="form-group" style="border-bottom: solid 1px #f4f4f4;"></div>
+						<div class="form-group">
+							<label class="col-sm-12 control-label" style="font-size: 1.5em; text-align: left;">5. 기타</label>
+						</div>
+						<div class="form-group">
+							<label class="col-sm-2 control-label">예금</label>
+							<div class="col-sm-4">
+								<input type="number" class="form-control" name="finance" value="">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-sm-2 control-label">영업인원</label>
+							<div class="col-sm-4">
+								<input type="number" class="form-control" name="sales_person" value="">
+							</div>
+							<label class="col-sm-2 control-label">관리인원</label>
+							<div class="col-sm-4">
+								<input type="number" class="form-control" name="vise_person" value="">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-sm-2 control-label">월말환율</label>
+							<div class="col-sm-4">
+								<input type="number" class="form-control" name="exchang_rate" value="">
+							</div>
+						</div>
+						<div class="form-group" style="border-bottom: solid 1px #f4f4f4;"></div>
+						<div class="form-group">
+							<label class="col-sm-12 control-label" style="font-size: 1.5em; text-align: left;">6. 본사관련</label>
+						</div>
+						<div class="form-group">
+							<label class="col-sm-2 control-label">FOB계획</label>
+							<div class="col-sm-4">
+								<input type="number" class="form-control" name="fob_plan" value="">
+							</div>
+							<label class="col-sm-2 control-label">FOB실적</label>
+							<div class="col-sm-4">
+								<input type="number" class="form-control" name="fob_result" value="">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-sm-2 control-label">상환계획</label>
+							<div class="col-sm-4">
+								<input type="number" class="form-control" name="repay_plan" value="">
+							</div>
+							<label class="col-sm-2 control-label">상환실행</label>
+							<div class="col-sm-4">
+								<input type="number" class="form-control" name="repay_result" value="">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-sm-2 control-label">채권잔액</label>
+							<div class="col-sm-4">
+								<input type="number" class="form-control" name="HQ_plan" value="">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</form>
+
+</body>
+</html>

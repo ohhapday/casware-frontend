@@ -1,0 +1,89 @@
+body {
+    font-family: NanumBarunGothic, '나눔바른고딕', 'Nanum Barun Gothic', 'Malgun Gothic', '맑은고딕', 'Apple SD Gothic Neo', Dotum, '돋움', sans-serif;
+}
+
+body::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 14px;
+    height: 14px;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    border: 3px solid #fff;
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.sidebar-menu .treeview {
+    border-bottom: #e3dffb solid 1px;
+}
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: auto;
+}
+
+.table-container::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 14px;
+    height: 14px;
+}
+
+.table-container::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    border: 3px solid #fff;
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.table-container thead>tr>th {
+    padding: 0;
+    border: 0;
+}
+
+.ellipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+}
+
+.div-hit {
+    float: right; color: #9f9f9f; margin-right: 20px; margin-top: 10px;
+    text-align: right;
+}
+
+/**
+하단 사용자 변경
+ */
+
+.box-header div:first-child {
+    cursor: auto;
+}
+
+.box .alert {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 15px;
+}
+
+.box .alert ul {
+    padding-left: 20px;
+}
+
+.table {
+    font-size: 0.9em;
+}
+
+.table th {
+    text-align: center;
+}
+
+.table .selected {
+    background-color: #909cb2 !important;
+    color: #FFFFFF;
+}
+
+table {
+    table-layout: fixed;
+}

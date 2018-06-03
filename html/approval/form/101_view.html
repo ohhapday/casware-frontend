@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+	<title>GlobalCAS</title>
+	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+	<link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" href="/bower_components/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/bower_components/AdminLTE/dist/css/AdminLTE.css">
+	<link rel="stylesheet" href="/bower_components/AdminLTE/dist/css/skins/_all-skins.min.css">
+	<link rel="stylesheet" href="/bower_components/iCheck/skins/all.css">
+	<link rel="stylesheet" href="/bower_components/jQuery_loading/jquery.faloading.css">
+	<link rel="stylesheet" href="/bower_components/select2/dist/css/select2.css"/>
+	<link rel="stylesheet"
+		  href="/bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css"/>
+
+	<link rel="shortcut icon" href="/images/cas.ico" type="image/x-icon"/>
+
+</head>
+<body>
+
+<!-- 결재란 -->
+<table class="my-table">
+	<tr>
+		<td width="36%" style="width: 36%; font-size: 25px;">법인서류신청서</td>
+		<td style="padding: 3px;">
+			<table class="my-table" id="draft-line-table" style="border: 1px solid #000000;">
+				<tr>
+					<td width="4%" rowspan="4">결<br><br><br>재</td>
+					<td width="10%">담당</td>
+					<td width="10%">팀장</td>
+					<td width="10%">부서장</td>
+					<td width="10%">본부장</td>
+					<td width="10%">부문장</td>
+					<td width="10%">CEO</td>
+				</tr>
+				<tr>
+					<td style="height: 25px"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td style="height: 85px"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td style="height: 25px"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+
+<!-- 기안문 -->
+<table class="my-table" style="margin-top: 5px;">
+	<tr>
+		<td width="16%" height="30" class="title">관리번호</td>
+		<td width="34%">
+			<div class="관리번호"></div>
+		</td>
+		<td width="16%" class="title">작성자</td>
+		<td width="34%">
+			<div class="작성자"></div>
+		</td>
+	</tr>
+	<tr>
+		<td height="30" class="title">개발유형</td>
+		<td colspan="3">
+			<div class="개발유형"></div>
+		</td>
+		<!-- <td width="16%" class="title">기존개발업무</td>
+		<td>
+			<div class="기존개발업무"></div>
+		</td> -->
+	</tr>
+	<tr>
+		<td height="30" class="title">개발명</td>
+		<td colspan="3">
+			<div class="개발명" style="text-align: left"></div>
+		</td>
+	</tr>
+	<tr>
+		<td height="30" class="title">P.M</td>
+		<td>
+			<div class="P_M"></div>
+		</td>
+		<td class="title">의뢰유형</td>
+		<td>
+			<div class="의뢰유형"></div>
+		</td>
+	</tr>
+	<tr>
+		<td height="30" class="title">개발기간</td>
+		<td>
+			<div class="개발기간"></div>
+		</td>
+		<td class="title">수익평가 년수</td>
+		<td>
+			<div class="수익평가년수"></div>
+		</td>
+	</tr>
+	<tr>
+		<td class="title">과 제 개 요<br> <br>
+			및<br> <br>
+			개발 필요성
+		</td>
+		<td colspan="3" style="padding: 3px;">
+			<div class="과제개요" style="text-align: left; min-height: 300px;"></div>
+		</td>
+	</tr>
+	<tr>
+		<td class="title">개발목표</td>
+		<td colspan="3" style="padding: 3px;">
+			<div class="개발목표" style="text-align: left; min-height: 300px;"></div>
+		</td>
+		<!--에디터 들어갈 자리 끝-->
+	</tr>
+</table>
+
+<div style="page-break-after: always;"></div>
+
+<table class="my-table" style="margin-top: 5px;">
+	<tr>
+		<td height="30" style="width: 116px;" class="title">개발<br>참여인원</td>
+		<td colspan="5" style="padding:3px;">
+			<table class="my-table" style="border: 1px solid #000000;">
+				<tr>
+					<td width="30%" class="title">업무내용</td>
+					<td width="30%" class="title">사원</td>
+					<td class="title">
+						<div>직급</div>
+						<div>평균시급</div>
+					</td>
+					<td class="title">참여시간</td>
+					<td class="title">
+						<div>인건비</div>
+						<div>(만원)</div>
+					</td>
+				</tr>
+				<tbody>
+				<tr class="experter">
+					<td height="30">
+						<div class="업무내용"></div>
+					</td>
+					<td>
+						<div class="사번"></div>
+					</td>
+					<td>
+						<div class="평균시급"></div>
+					</td>
+					<td>
+						<div class="참여시간"></div>
+					</td>
+					<td>
+						<div class="인건비"></div>
+					</td>
+				</tr>
+				</tbody>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td height="30" class="title">총투자<br>예상금액<br>(만원)</td>
+		<td colspan="5" style="padding:3px;">
+			<table class="my-table" style="border: 1px solid #000000;">
+				<tr>
+					<td height="30" width="10%" class="title">총인건비</td>
+					<td width="10%">
+						<span class="총인건비"></span>
+						<span style="width: 30%">만원</span>
+					</td>
+					<td width="10%" class="title">직접투자비</td>
+					<td width="10%" class="form-inline">
+						<span class="직접투자비"></span>
+						<span style="width: 30%">만원</span>
+					</td>
+				</tr>
+				<tr>
+					<td height="30" class="title">설비투자비</td>
+					<td class="form-inline">
+						<span class="설비투자비"></span>
+						<span style="width: 30%">만원</span>
+					</td>
+					<td class="title">경비</td>
+					<td class="form-inline">
+						<span class="경비"></span>
+						<span style="width: 30%">만원</span>
+					</td>
+				</tr>
+				<tr>
+					<td height="30" class="title">합계</td>
+					<td colspan="3" class="form-inline">
+						<span class="합계"></span>
+						<span style="width: 30%">만원</span>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td height="30" class="title">개발 방법</td>
+		<td colspan="5" class="form-inline">
+			<span class="개발방법"></span>
+			<span class="hidden">
+				(위탁사 : <span class="위탁사"></span>)
+			</span>
+		</td>
+	</tr>
+	<tr>
+		<td height="30" class="title">예상판가</td>
+		<td>
+			<div class="예상판가"></div>
+		</td>
+		<td class="title">부품비</td>
+		<td>
+			<div class="부품비"></div>
+		</td>
+		<td class="title">제조원가</td>
+		<td>
+			<div class="제조원가"></div>
+		</td>
+	</tr>
+</table>
+
+<table style="width: 100%;">
+	<tr>
+		<td height="19" style="width: 32%">A704-14</td>
+		<td style="width: 35%; text-align: center;">주식회사 카스</td>
+		<td style="width: 32%; text-align: right;">Ver.1 (2017. 04. 01)</td>
+	</tr>
+</table>
+
+</body>
+</html>

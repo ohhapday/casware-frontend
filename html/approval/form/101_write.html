@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+	<title>GlobalCAS</title>
+	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+
+	<link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css">
+	<link rel="stylesheet" href="/bower_components/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/bower_components/AdminLTE/dist/css/AdminLTE.css">
+	<link rel="stylesheet" href="/bower_components/AdminLTE/dist/css/skins/_all-skins.min.css">
+	<link rel="stylesheet" href="/bower_components/iCheck/skins/all.css">
+	<link rel="stylesheet" href="/bower_components/jQuery_loading/jquery.faloading.css">
+	<link rel="stylesheet" href="/bower_components/select2/dist/css/select2.css"/>
+	<link rel="stylesheet"
+		  href="/bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css"/>
+
+	<link rel="shortcut icon" href="/images/cas.ico" type="image/x-icon"/>
+
+</head>
+<body>
+
+<!-- 결재란 -->
+<table class="my-table">
+	<tr>
+		<td width="36%" style="width: 36%; font-size: 25px;">개발계획서</td>
+		<td style="padding: 3px;">
+			<table class="my-table" id="draft-line-table" style="border: 1px solid #000000;">
+				<tr>
+					<td width="4%" rowspan="4">결<br><br><br>재</td>
+					<td width="10%">담당</td>
+					<td width="10%">팀장</td>
+					<td width="10%">부서장</td>
+					<td width="10%">본부장</td>
+					<td width="10%">부문장</td>
+					<td width="10%">CEO</td>
+				</tr>
+				<tr>
+					<td style="height: 25px"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td style="height: 85px"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td style="height: 25px"></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+
+<!-- 기안문 -->
+<table class="my-table" style="margin-top: 5px;">
+	<tr>
+		<td width="16%" height="30" class="title">관리번호</td>
+		<td width="34%">00000</td>
+		<td width="16%" class="title">작성자</td>
+		<td width="34%">
+			<input name="작성자" type="text" class="form-control" readonly>
+		</td>
+	</tr>
+	<tr>
+		<td height="30" class="title">개발유형</td>
+		<td colspan="3">
+			<label class="radio-inline input-sm">
+				<input type="radio" name="개발유형" class="minimal" value="신규" required>
+				신규
+			</label>
+			<label class="radio-inline input-sm">
+				<input type="radio" name="개발유형" class="minimal" value="변경" required>
+				변경
+			</label>
+			<label class="radio-inline input-sm">
+				<input type="radio" name="개발유형" class="minimal" value="선행" required>
+				선행
+			</label>
+		</td>
+		<!-- <td width="16%" class="title">기존개발업무</td>
+		<td>
+			<select name="기존개발업무" class="form-control">
+				<option value="">-- 선택 --</option>
+			</select>
+		</td> -->
+	</tr>
+	<tr>
+		<td height="30" class="title">개발명</td>
+		<td colspan="3">
+			<input name="개발명" type="text" class="form-control" required>
+		</td>
+	</tr>
+	<tr>
+		<td height="30" class="title">P.M</td>
+		<td>
+			<select name="P.M" class="form-control input-sm select2 hidden" style="width: 100%;">
+				<option value=""></option>
+			</select>
+		</td>
+		<td class="title">의뢰유형</td>
+		<td>
+			<label class="radio-inline input-sm" style="padding: 5px 3px;">
+				<input type="radio" name="의뢰유형" class="minimal" value="현업" required>
+				현업
+			</label>
+			<label class="radio-inline input-sm" style="padding: 5px 3px; margin-left: 0px;">
+				<input type="radio" name="의뢰유형" class="minimal" value="자체" required>
+				자체진행
+			</label>
+			<label class="radio-inline input-sm" style="padding: 5px 3px; margin-left: 0px;">
+				<input type="radio" name="의뢰유형" class="minimal" value="임원" required>
+				임원지시
+			</label>
+		</td>
+	</tr>
+	<tr>
+		<td height="30" class="title">개발기간</td>
+		<td class="form-inline">
+			<div class="form-group">
+				<div class="input-group">
+					<input name="개발시작일" type="text" class="form-control"
+						   placeholder="시작일" required style="width: 45%;">
+					~
+					<input name="개발종료일" type="text" class="form-control pull-right"
+						   placeholder="종료일" required style="width: 45%;">
+				</div>
+			</div>
+		</td>
+		<td class="title">수익평가 년수</td>
+		<td>
+			<input name="수익평가년수" type="text" class="form-control"
+				   placeholder="1년" required>
+		</td>
+	</tr>
+	<tr>
+		<td class="title">과 제 개 요<br> <br>
+			및<br> <br>
+			개발 필요성
+		</td>
+		<td colspan="3" style="padding: 3px;">
+			<textarea name="과제개요"></textarea>
+			<script>
+                CKEDITOR.replace('과제개요', {
+                    width: '100%',
+                    height: '200px',
+                    filebrowserImageUploadUrl: '/bower_components/ckeditor_no_bower/upload/php/upload.php?Type=Image' 	//여기 경로로 파일을 전달하여 업로드 시킨다.
+                });
+			</script>
+		</td>
+	</tr>
+	<tr>
+		<td class="title">개발목표</td>
+		<td colspan="3" style="padding: 3px;">
+			<!--에디터 들어갈 자리-->
+			<textarea name="개발목표"></textarea>
+			<script>
+                CKEDITOR.replace('개발목표', {
+                    width: '100%',
+                    height: '200px',
+                    filebrowserImageUploadUrl: '/bower_components/ckeditor_no_bower/upload/php/upload.php?Type=Image' 	//여기 경로로 파일을 전달하여 업로드 시킨다.
+                });
+			</script>
+		</td>
+		<!--에디터 들어갈 자리 끝-->
+	</tr>
+</table>
+
+<div style="page-break-after: always;"></div>
+
+<table class="my-table" style="margin-top: 5px;">
+	<tr>
+		<td height="30" style="width: 116px;" class="title">개발<br>참여인원</td>
+		<td colspan="5" style="padding:3px;">
+			<table class="my-table" style="border: 1px solid #000000;">
+				<tr>
+					<td width="5%">
+						<button type="button" class="btn btn-primary btn-xs" title="인원 추가"
+								data-toggle="tooltip" data-placement="left">
+							<i class="fa fa-plus-circle"></i>
+						</button>
+					</td>
+					<td width="15%" class="title">업무내용</td>
+					<td width="15%" class="title">사원</td>
+					<td width="10%" class="title">
+						<div>직급</div>
+						<div>평균시급</div>
+					</td>
+					<td width="10%" class="title">참여시간</td>
+					<td width="10%" class="title">
+						<div>인건비</div>
+						<div>(만원)</div>
+					</td>
+				</tr>
+				<tbody>
+				<tr class="experter">
+					<td>
+						<button type="button" class="btn btn-danger btn-xs" title="인원 삭제"
+								data-toggle="tooltip" data-placement="left">
+							<i class="fa fa-minus-square"></i>
+						</button>
+					</td>
+					<td>
+						<input name="개발인력[0][업무내용]" type="text" class="form-control" required>
+					</td>
+					<td>
+						<select name="개발인력[0][사번]" class="form-control input-sm select2 hidden" style="width: 100%">
+							<option value=""></option>
+						</select>
+					</td>
+					<td>
+						<input name="개발인력[0][평균시급]" type="text" class="form-control" style="text-align: right;" required
+							   readonly>
+					</td>
+					<td>
+						<input name="개발인력[0][참여시간]" type="number" min="0" class="form-control" style="text-align: right;"
+							   required>
+					</td>
+					<td>
+						<input name="개발인력[0][인건비]" type="text" class="form-control" style="text-align: right;" required
+							   readonly>
+					</td>
+				</tr>
+				</tbody>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td height="30" class="title">총투자<br>예상금액<br>(만원)</td>
+		<td colspan="5" style="padding:3px;">
+			<table class="my-table" style="border: 1px solid #000000;">
+				<tr>
+					<td height="30" width="10%" class="title">총인건비</td>
+					<td width="10%" class="form-inline">
+						<input name="총인건비" type="number" class="form-control"
+							   style="text-align: right;" required readonly>
+						<span style="width: 30%">만원</span>
+					</td>
+					<td width="10%" class="title">직접투자비</td>
+					<td width="10%" class="form-inline">
+						<input name="직접투자비" type="number" min="0" class="form-control"
+							   style="text-align: right;" required>
+						<span style="width: 30%">만원</span>
+					</td>
+				</tr>
+				<tr>
+					<td height="30" class="title">설비투자비</td>
+					<td class="form-inline">
+						<input name="설비투자비" type="number" min="0" class="form-control"
+							   style="text-align: right;" required>
+						<span style="width: 30%">만원</span>
+					</td>
+					<td class="title">경비</td>
+					<td class="form-inline">
+						<input name="경비" type="number" min="0" class="form-control" style="text-align: right;" required>
+						<span style="width: 30%">만원</span>
+					</td>
+				</tr>
+				<tr>
+					<td height="30" class="title">합계</td>
+					<td colspan="3" class="form-inline">
+						<input name="합계" type="text" class="form-control"
+							   style="text-align: right; width: 80%; font-weight: bold; font-size: 1.2em;"
+							   required readonly>
+						<span style="width: 30%">만원</span>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td height="30" class="title">개발 방법</td>
+		<td colspan="5" class="form-inline">
+			<label class="radio-inline input-sm">
+				<input type="radio" name="개발방법" class="minimal" value="자체개발" required>
+				자체개발
+			</label>
+			<label class="radio-inline input-sm">
+				<input type="radio" name="개발방법" class="minimal" value="공동개발" required>
+				공동개발
+			</label>
+			<label class="radio-inline input-sm">
+				<input type="radio" name="개발방법" class="minimal" value="위탁개발" required>
+				위탁개발
+			</label>
+			위탁개발 (위탁사 :
+			<input name="위탁사" type="text" class="form-control" style="width: 100px" readonly>
+			)
+		</td>
+	</tr>
+	<tr>
+		<td height="30" class="title">예상판가</td>
+		<td>
+			<input name="예상판가" type="number" min="0" class="form-control" required>
+		</td>
+		<td class="title">부품비</td>
+		<td>
+			<input name="부품비" type="number" min="0" class="form-control" required>
+		</td>
+		<td class="title">제조원가</td>
+		<td>
+			<input name="제조원가" type="number" min="0" class="form-control" required>
+		</td>
+	</tr>
+</table>
+
+<table style="width: 100%;">
+	<tr>
+		<td height="19" style="width: 32%">A704-14</td>
+		<td style="width: 35%; text-align: center;">주식회사 카스</td>
+		<td style="width: 32%; text-align: right;">Ver.1 (2017. 04. 01)</td>
+	</tr>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,127 @@
+body {
+	font-size: 12px;
+	font-family: "Tahoma", "sans-serif", "Arial", "맑은 고딕";
+}
+
+tbody {
+	text-align: left;
+}
+
+.td_black {
+	background: url(/standard/images/x_slash2.png);
+	background-size: 98% 98%;
+	background-color: #EAEAEA;
+}
+
+.form_table {
+	width: 1475px;
+	table-layout: fixed;
+	/*border-bottom: solid 1px #95B8E7;
+	border-right: solid 1px #95B8E7;*/
+	border-collapse: separate;
+}
+
+td {
+	border-top: dotted 1px #747474;
+	border-left: dotted 1px #747474;
+	background-color: #FFFFFF;
+	text-align: center;
+}
+
+.td_title {
+	color: #000000;
+	border-top: solid 1px #95B8E7;
+	border-left: solid 1px #95B8E7;
+	background-color: #EFF5FF;
+	text-align: center;
+	font-weight: bold;
+	padding: 5px 2px;
+}
+
+.td_sum {
+	color: #000000;
+	border-top: solid 1px #95B8E7;
+	border-left: solid 1px #95B8E7;
+	background-color: #cddded;
+	text-align: center;
+	font-weight: bold;
+	padding: 5px 2px;
+}
+
+.td_input {
+	text-align: right;
+}
+
+.border_bottom {
+	border-bottom: solid 1px #95B8E7;
+}
+
+.border_right {
+	border-right: solid 1px #95B8E7;
+}
+
+.border_double {
+	border-top: double 3px #95B8E7;
+}
+.border_bottom_double {
+	border-bottom: double 3px #95B8E7;
+}
+
+.table_title {
+	font-size: 15px;
+	text-align: left;
+	border-top: 0px;
+	border-left: 0px;
+	font-weight: bold;
+}
+
+.table_title > div {
+	margin-top: 30px;
+}
+
+.num_input {
+	letter-spacing: -0.5px;
+	border: 0px solid #CCC;
+	height: 21px;
+	line-height: 20px;
+	width: 98%;
+	text-align: right;
+	display: table-cell;
+	font-size: 12px;
+}
+
+.num_div {
+	letter-spacing: -0.5px;
+	height: 21px;
+	text-align: right;
+	padding: 3px 2px 0 0;
+}
+
+input[type="text"]:disabled {
+	letter-spacing: -1px;
+	border: 0px solid #CCC;
+	height: 21px;
+	width: 98%;
+	text-align: right;
+	display: table-cell;
+	font-size: 12px;
+	font-weight: 600;
+	background-color: #F4F4F4;
+}
+
+.td_cal {
+	padding: 0px 2px;
+	color: #000000;
+	background-color: #F4F4F4;
+	height: 22px;
+	text-align: right;
+}
+
+.cal {
+	letter-spacing: -1px;
+	text-align: right;
+	font-weight: 600;
+}
+
+
+
